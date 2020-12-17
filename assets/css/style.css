@@ -1,0 +1,1325 @@
+/*
+    * Project Name: ICTBanglaBD
+    * Project Athor: Abu Sayed 
+    * Project Date:09-09-2020
+    * All Section:
+        1. header-top-wrapper
+        2. nav-header-wrapper
+        3. banner-slider-wrapper
+        4. domain-serch-wrapper
+        5. service-wrapper
+        6. OurProcess-wrapper
+        7. counter-wrapper
+        8. testimonials-wrapper
+        9. clients-wrapper css start
+        10. footer-wrapper
+        11. footer-copy-wrappe
+        12. contact page 
+            1. contact-banner-wrapper css start 
+            2. contact-info-wrapper css st art 
+        13. facebook_boost page 
+            1. callUs-wrapper css start
+        14. SEO Marketing page 
+        15. YouTube Marketing page  
+        16. Email Marketing page
+        16. ourclients page 
+            1. ourclients-info-wrapper
+        17. About Us page 
+            1. AboutUs-info-area
+            2. about-slider-area-wrapper
+            3. AboutUs-team-wrapper
+            4. AboutUs-hiring-wrapper
+        18. privecy-policy page 
+        19. terms-conditions page
+        20. FAQ page
+*/
+
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+body {
+    background-color: #ffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #212529;;
+  }
+  
+ @media (min-width: 1200px) {
+    .nav-container {
+        max-width: 1220px !important;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: #212529;
+    transition: 1s;
+}
+a:hover{
+    text-decoration: none;
+    color: #212529;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+ul>li{
+    float: left;
+    list-style: none;
+}
+p{
+    font-size: 16px;
+    color: #686464;
+    font-style: normal;
+    font-weight: 400;
+}
+h3{
+    font-size: 22px;
+    color: #3e3c3c;
+}
+/*================================>  
+    Common css start 
+<================================== */
+.domain-title-home, .service-heading, .ourprocess-heading, .testimonials-heading, .our-slider-area-heading, .AboutUs-team-heading, .AboutUs-hiring-heading, .contant-info-content-heading, .domain-reg-price-title, .Email-bottom-heading, .FacebookBoost-bottom-heading, .seo-bottom-heading,
+.Accounting-Software-bottom-heading, .Hostel-Management-System-heading, .Event-Management-Software-heading, .E-commerce-Website-bottom-heading, .Newspaper-Website-bottom-heading, .service-banner-heading{
+    position: relative;
+}
+.domain-title-home h2::after, .service-heading h2::after, .ourprocess-heading h2::after, .testimonials-heading h2:after, .our-slider-area-heading h2::after, .AboutUs-team-heading h2::after, .AboutUs-hiring-heading h2::after, .contant-info-content-heading h3::after, .domain-reg-price-title h2::after, .Email-bottom-heading h2::after, .FacebookBoost-bottom-heading h2::after, .seo-bottom-heading h2::after,
+.Accounting-Software-bottom-heading h2::after, .Hostel-Management-System-heading h2::after, .Event-Management-Software-heading h2::after, .E-commerce-Website-bottom-heading h2::after, .Newspaper-Website-bottom-heading h2::after, .service-banner-heading h1::after{
+    width: 246px;
+    height: 2px;
+    background: #288feb;
+    margin: 0 auto;
+    position: absolute;
+    content: '';
+    top: 42px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.domain-title-home h2::before, .service-heading h2::before, .ourprocess-heading h2::before, .testimonials-heading h2::before, .our-slider-area-heading h2::before, .AboutUs-team-heading h2::before, .AboutUs-hiring-heading h2::before, .contant-info-content-heading h3::before, .domain-reg-price-title h2::before, .Email-bottom-heading h2::before, .FacebookBoost-bottom-heading h2::before, .seo-bottom-heading h2::before,
+.Accounting-Software-bottom-heading::before, .Hostel-Management-System-heading h2::before, .Event-Management-Software-heading h2::before, .E-commerce-Website-bottom-heading h2::before, .Newspaper-Website-bottom-heading::before, .service-banner-heading h1::before{
+    width: 30px;
+    height: 6px;
+    background: #288feb;
+    margin: 0 auto;
+    position: absolute;
+    content: '';
+    top: 42px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.domain-serch-wrapper, .OurProcess-wrapper, .testimonials-wrapper{
+    width: 100%;
+    height:auto;
+    padding: 55px 0;
+    background-color: #1F2B39;
+    color: #ffffffd6;
+}
+
+.AboutUs-info-content, .fb-content-info, .seo-content-info, .yt-content-info, .as-content-info, .hm-content-info, .eb-content-info, .ew-content-info,
+.E-commerce-Website-content-info, .gd-content-info, .sv-content-info{
+    border: 1px solid #0000001c;
+    padding: 30px 40px;
+    transition: .3s;
+}
+.AboutUs-info-content:hover, .fb-content-info:hover, .seo-content-info:hover, .yt-content-info:hover, .as-content-info:hover, .hm-content-info:hover, .eb-content-info:hover, .ew-content-info:hover,
+.E-commerce-Website-content-info:hover, .gd-content-info:hover, .sv-content-info:hover{
+    box-shadow: 0px 0px 26px 1px #0000001a;
+    border-radius: 10px;
+}
+.as-content-info p{
+    margin-bottom: 0;
+}
+/*================================>  
+    header-top-wrapper css start 
+<================================== */
+
+.header-top-wrapper{
+    background-color: #2b3e6cdb;
+    color: white;
+    padding: 10px 0;
+}
+.header-top-content span{
+    font-size: 13px;
+}
+.header-top-wrapper .header-top-icon ul li{
+    margin-right: 18px;
+}
+.header-top-wrapper .header-top-icon ul>li>a{
+   color:#fff !important;
+}
+/*================================>  
+    nav-header-wrapper css start 
+<================================== */
+.nav-header-wrapper{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index:25;
+    background: #f3f3f3 none repeat scroll 0 0;
+}
+.nav-item .nav-link{
+    font-size: 14px;
+    text-transform:uppercase;
+    font-weight: 500;
+    color: #272727 !important;
+    font-family: 'Roboto';
+}
+.nav-item .nav-link:hover{
+    color: #288feb !important;
+}
+.navbar{
+    padding:15px 0;
+}
+.dropdown-toggle::after {   
+    transition: transform 0.15s linear; 
+}
+.show.dropdown .dropdown-toggle::after {
+    transform: translateY(3px);
+}
+.dropdown-menu {
+    margin-top: 0;
+}
+.dropdown-menu {
+    padding: .5rem 0;
+    border: 1px solid #f3f3f3;
+}
+.dropdown-item {
+    padding: .5rem 1.5rem;
+}
+.dropdown-item:hover {
+    color: #288feb !important;
+    background-color: transparent;
+    margin-left: 5px;
+}
+
+/*=================================================>  
+            banner-slider-wrapper css start 
+<================================================== */
+.carousel-caption{
+    right: 30%;
+    bottom: 100px;
+    left: 30%;
+}
+
+/*=================================================>  
+            domain-serch-wrapper css start 
+<================================================== */
+
+.domain-reg-price-title h2::after{
+    width: 368px;
+    top: 45px;
+}
+.domain-reg-price-title h2::before{
+    top: 45px;
+}
+
+.domain-serch .domain-search-bar .form-control {
+    padding: .8rem .75rem !important;
+    border-radius: .25rem 0 0 .25rem;
+}
+.domain-serch .domain-type .selecdomain{
+    height: 51px !important;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    color: #404B57;
+    font-size: 14px;
+    padding-left: 22px;
+    cursor: pointer;
+}
+.domain-search-btn input {
+    width: 100% !important;
+    background-color: rgb(40, 143, 235);
+    font-family: 'Roboto';
+    font-size: 17px;
+    font-weight: 700;
+    width: 163px;
+    height: 51px;
+    border: 2px solid #288feb;
+    color: #fff;
+    margin-left: -32px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 0 .25rem .25rem 0;
+    cursor: pointer;
+}
+.domain-serch-wrapper .domain-name .domain-name-info{
+    border:1px solid #fff;
+}
+.domain-name-info p{
+    color: #fff;
+}
+
+
+ @media (max-width: 414px) {
+    .domain-reg-price-title h2{
+        font-size: 28px;
+    }
+    .domain-reg-price-title h2::after{
+        width: 330px;    }
+    .carousel-item img{
+        height: 250px;
+    }
+    .domain-serch .domain-type .selecdomain {
+        padding-left: 6px;
+    }
+
+    .OurProcess-wrapper{
+        padding: 15px 0;
+    }
+    .img-area{
+        margin: 0 !important;
+    }
+    .counter-wrapper {
+        height: 550px !important;
+    }
+    .testimonial .Avatar-area .avatar img {
+        height: 117px;
+        width: 31%;
+    }
+}
+
+
+
+/*=================================================>  
+            service-wrapper css start 
+<================================================== */
+
+.service-heading h2::after{
+    width: 160px;
+}
+.service-wrapper .service-content-area .service-content .service-icon-info i{
+    font-size: 35px;
+    color: #288feb;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: .1s;
+    line-height: 82px;
+}
+.service-wrapper .service-content-area .service-content:hover .service-icon-info i{
+    border: 3px solid #288feb;
+}
+
+/*=================================================>  
+            OurProcess-wrapper css start 
+<================================================== */
+
+.ourprocess-heading h2::after{
+    width: 150px;
+}
+  .steps {
+    width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  
+  .steps::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 24px;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    left: calc(50px / 2);
+    z-index: 1;
+  }
+  
+  .steps::after {
+    content: '';
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 5px 0px var(--primary-color);
+    border-radius: 15px;
+    left: calc(50px / 2);
+    bottom: 24px;
+    transform: translateX(-45%);
+    z-index: 2;
+  }
+  
+  .step {
+    padding: 0 20px 24px 50px;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .step::before {
+    content: '';
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    background-color: rgb(198, 198, 198);
+    border-radius: 15px;
+    left: calc(50px / 2);
+    transform: translateX(-45%);
+    z-index: 2;
+  }
+  
+  .step::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: rgb(198, 198, 198);
+    left: calc(50px / 2);
+    top: 0;
+    z-index: 1;
+  }
+  
+  .step.minimized {
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .header {
+    user-select: none;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  .header span{
+    color: #288feb;
+  }
+  .subheader {
+    user-select: none;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .step-content {
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+  }
+  .step-content p{
+    color: #d7d5d5e3;
+  }
+  .step.minimized > .step-content {
+    height: 0px;
+  }
+  
+  .step-content.one, .step-content.two, .step-content.three, .step-content.four {
+    margin-top: 10px;
+    color: #fff;
+  }
+  
+  
+/*=================================================>  
+            counter-wrapper css start 
+<================================================== */
+.counter-wrapper{
+    width: 100%;
+    height:350px;
+    position:relative;
+    background-image: url(../../assets/img/counter/img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding:0;
+}
+.counter-wrapper::after{
+    width: 100%;
+    height:350px;
+    padding:0;
+    background: rgba(0, 0, 0, 0.7);
+    position:absolute;
+    content:'';
+    top:0;
+    left:0;
+}
+.counter-wrapper .counter-content-area{
+    margin:77px 0;
+}
+.counter-content-area .counter-content {
+    position:relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+}
+.counter-content-area .counter-content .counter-icon-info i{
+    font-size: 35px;
+    color: #fff;
+    width: 83px;
+    height: 80px;
+    padding: 20px 0;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    border: 2px solid #288feb;
+}
+
+/*=================================================>  
+            testimonials-wrapper css start 
+<================================================== */
+
+.testimonials-heading h2:after{
+    width: 235px;
+    top: 45px;
+}
+.testimonials-heading h2:before{
+    top: 45px;
+}
+.testimonials-wrapper .Review-icon-area .fa-star{
+    color: #f2b827;
+}
+.testimonials-wrapper .testimonial p{
+    color: #d7d5d5e3;
+}
+/*=================================================>  
+            clients-wrapper css start 
+<================================================== */
+
+.clients-wrapper{
+    padding:50px 0;
+    background: #f3f3f3 none repeat scroll 0 0;
+}
+.clients-wrapper .slider .item{
+    margin:0 5px;
+    border: 1px solid #00000024;
+}
+.clients-wrapper .slider .item img{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 1px #00000024;
+}
+.clients-wrapper .responsive .slick-prev, .slick-next {
+    background: #ccc9c9;
+    height: 50px;
+    transition: .5s;
+}
+.clients-wrapper .responsive .slick-next:hover {
+    background: #1f2b39;
+}
+.clients-wrapper .responsive .slick-prev:hover{
+    background: #1f2b39;
+}
+/*=================================================>  
+            footer-wrapper css start 
+<================================================== */
+.footer-wrapper{
+    background-color: #2b3e6cdb;
+    color: white;
+    padding: 50px 0 10px 0;
+}
+.footer-heading h6{
+    border-bottom:2px dashed #288feb;
+    padding-bottom:10px
+}
+.footer-wrapper .footer-content p{
+    color:#fff;
+}
+.footer-info .footer-content .footer-custom-info li{
+    padding: 0px 0;
+    border-bottom: none;
+    font-size: 16px;
+}
+.footer-info .footer-content ul>li{
+    float: initial;
+    padding: 7px 0;
+    border-bottom: 1px solid #2222;
+    margin: 8px 0;
+}
+.footer-info .footer-content ul>li:last-child{
+    border-bottom:none;
+}
+.footer-info .footer-content ul>li>span{
+    margin-right:10px;
+}
+.footer-info .footer-content ul>li>a{
+    color:#fff;
+    font-size: 16px;
+}
+.footer-info .footer-content ul>li>a:hover{
+    margin-left:6px;
+}
+/*================================>  
+    footer-copy-wrappe css start 
+<================================== */
+
+.footer-copy-wrapper{
+    color: #fff;
+    background-color: #485980e6;
+}
+.footer-copy-wrapper a{
+   color:#288feb !important;
+}
+
+/*=================================================> 
+*                   contact page 
+          contact-banner-wrapper css start 
+          contact-info-wrapper css st art
+<================================================== */
+
+
+.contant-info-content-heading h3::after {
+    width: 185px;
+}
+.contant-info-content-heading h3::after {
+    width: 185px;
+}
+.contact-banner-wrapper{
+    width: 100%;
+    height:200px;
+    position:relative;
+    background-image: url(../../assets/img/allBanner/15abstract.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contact-banner-wrapper::after{
+    width: 100%;
+    height:200px;
+    background: rgba(0, 0, 0, .6);
+    position:absolute;
+    content:'';
+    top:0;
+    left:0;
+}
+.contact-banner-wrapper .contact-banner-heading {
+    position:relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    padding: 59px 0;
+    text-transform: uppercase;
+}
+.contact-banner-heading p{
+    color: #fff;
+}
+/* contact-info-wrapper */
+
+.contact-info-wrapper{
+    background: #f3f3f3 none repeat scroll 0 0;
+    padding: 50px 0;
+}
+.contact-info-wrapper .form-group label{
+    font-size: 18px;
+    margin-left: 5px;
+    font-weight: 500;}
+.contact-info-wrapper .form-control {
+    padding: .9rem .75rem;
+    font-size: .9rem;}
+    
+.contact-info-wrapper .custom-select {
+    height: calc(3rem + 2px);
+}
+.contact-info-wrapper .contact-btn .btn {
+    padding: .7rem .75rem;
+    font-size: 1.2rem;
+}
+
+.contant-info-text ul>li{
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+}
+.contant-info-text ul>li span{
+    margin-right:10px;
+    color:#288feb;
+}
+
+ @media (max-width: 414px) {
+    .contact-banner-wrapper .contact-banner-heading {
+        padding: 64px 0;
+    }
+    .contact-banner-wrapper .customBH, .contact-banner-wrapper .customBHF{
+        padding: 40px 0;
+    }
+}
+
+/*=================================================> 
+*              facebook_boost page 
+            callUs-wrapper css start
+<================================================== */
+
+.FacebookBoost-bottom-heading h2::after{
+    width: 730px;
+    top: 45px;
+}
+.FacebookBoost-bottom-heading h2::before{
+    top: 45px;
+}
+/* callUs-wrapper  */
+.callUs-wrapper .card-header{
+    position: relative;
+    left: 0;
+    bottom: -12px;
+    z-index: 1;
+    background: #288feb;
+    color: #fff;
+}
+.callUs-wrapper .card-header span{
+    color: #0000009c;
+}
+@media (max-width: 768px) {
+    .FacebookBoost-bottom-heading h2{
+        font-size:28px
+    }
+    .FacebookBoost-bottom-heading h2::after{
+        width: 630px;
+    }
+}
+ @media (max-width: 414px) {
+    .FacebookBoost-bottom-heading h2{
+        font-size:16px
+    }
+    .FacebookBoost-bottom-heading h2::after{
+        width: 330px;
+    }
+    .FacebookBoost-img-area img{
+        height: 200px;
+    }
+}
+
+
+/*=================================================> 
+*                   SEO Marketing page 
+<================================================== */
+.seo-bottom-heading h2::after{
+    width: 520px;
+    top: 45px;
+}
+.seo-bottom-heading h2::before{
+    top: 45px;
+}
+ @media (max-width: 414px) {
+    .seo-bottom-heading h2{
+        font-size:19px;
+    }
+    .seo-bottom-heading h2::after{
+        width: 310px;
+    }
+    .seo-img-area img{
+        height: 200px;
+    }
+}
+/*=================================================> 
+*            YouTube Marketing page 
+<================================================== */
+
+
+ @media (max-width: 414px) {
+
+    .YouTube-img-area img{
+        height: 200px;
+    }
+}
+/*=================================================> 
+*            Email Marketing page 
+<================================================== */
+
+.Email-bottom-heading h2::after{
+    width: 170px;
+    top: 45px;
+}
+.Email-bottom-heading h2::before{
+    top: 45px;
+}
+.Email-content-info-item{
+    display: flex;
+    justify-content: space-between;
+}
+.Email-content-info-item li{
+    padding: 5px 0;
+    font-size: 16px;
+    color: #686464;
+}
+
+@media (max-width: 414px) {
+    .Email-content-info-item{
+        display: block;
+        justify-content: space-between;
+    }
+    .Email-img-area img{
+        height: 200px;
+    }
+}
+
+
+/*=================================================> 
+*               ourclients page 
+            ourclients-info-wrapper
+<================================================== */
+
+.ourclients-info-wrapper .ourclients-images-area .ourclients-single-img img{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+    border: 1px solid #00000021;
+}
+.ourclients-single-img img:hover{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
+}
+/*=================================================> 
+*              About Us page 
+            AboutUs-info-area
+            about-slider-area-wrapper
+            AboutUs-team-wrapper
+            AboutUs-hiring-wrapper
+<================================================== */
+
+.our-slider-area-heading h2::after{
+    width: 150px;
+    top: 45px;}
+
+.our-slider-area-heading h2::before{
+    top: 45px;}
+
+.AboutUs-info-content-text p{
+    text-align: justify;
+}
+
+/* about-slider-area-wrapper */
+
+.slider-area img{
+    width: 100%;
+    height: 400px;
+}
+/* AboutUs-team-wrapper */
+
+.AboutUs-team-heading h2::after{
+    width: 340px;
+    top: 45px;
+}
+.AboutUs-team-heading h2::before{
+    top: 45px;
+}
+
+.AboutUs-team-profile .AboutUs-team-profile-img img{
+    width: 62%;
+    height: 246px;
+    border-radius: 100%;
+}
+
+/* AboutUs-hiring-wrapper */
+
+.AboutUs-hiring-heading h2::after{
+    width: 180px;
+    top: 45px;
+}
+.AboutUs-hiring-heading h2::before{
+    top: 45px;
+}
+
+.AboutUs-hiring-wrapper{
+    width: 100%;
+    height: auto;
+    padding:50px 0;
+    background-color: #1F2B39;
+    color: #ffffffd6;
+}
+.AboutUs-hiring-content p{
+    color: #ffffffd6;
+}
+.AboutUs-hiring-btn{
+    margin-top: 70px !important;
+}
+.AboutUs-hiring-btn a{
+    padding: 25px 60px;
+    background-color: #0f0f0f;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+.AboutUs-hiring-btn a:hover{
+    background: #288feb;
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .AboutUs-team-profile .AboutUs-team-profile-img img {
+        width: 81%;
+        height: 176px;
+    }
+}
+@media (max-width: 414px) {
+    .AboutUs-team-heading h2{
+        font-size: 28px;
+    }
+    .slider-area img{
+        height: 200px;
+    }
+    .AboutUs-team-profile .AboutUs-team-profile-img img{
+        width: 62%;
+        height: 116px;
+    }
+    .slider-area-heading, .customfontsize {
+        margin-top: 0px !important;
+    }
+    .customfontsize h2 {
+        font-size: 29px;
+    }
+    .AboutUs-hiring-btn a {
+        padding: 25px 27px;
+    }
+}
+
+
+/*=================================================> 
+*               privecy-policy page
+                terms-conditions page
+               privacy-policy-wrapper
+<================================================== */
+/*privacy-policy-wrapper*/
+
+.privacy-policy-area .pp-content-text h3 {
+    font-family: initial;
+    font-weight: 500;
+}
+.pp-content-text ul{
+    margin: 0;
+    padding: 0;
+    margin-left: 44px;
+}
+.pp-content-text ul>li{
+    float: inherit;
+    list-style: disclosure-closed;
+    padding: 4px 0;
+    color: #686464;
+    font-size: 16px;
+}
+
+
+/*=================================================> 
+*                    FAQ page 
+               privacy-policy-wrapper
+<================================================== */
+
+.faq-wrapper h5{
+    transition: .5s;
+}
+.faq-wrapper h5:hover{
+    color: #288feb !important;
+}
+.faq-wrapper .card-body {
+    font-size: 16px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 500;
+}
+
+/*=================================================> 
+*             Domainr Registration page 
+            domain-reg-content-wrapper
+            domain-reg-price-table
+<================================================== */
+.domain-reg-content-wrapper{
+    width: 100%;
+    height: auto;
+    background: #f3f3f3 none repeat scroll 0 0;
+    align-items: center;
+}
+.domain-reg-content-area{
+    display: flex;
+    align-items: center;}
+
+.domain-reg-content-area .domain-reg-icon i{
+    margin-right:20px;
+    font-size: 40px;
+    color: #1f2b3929;
+    align-items: center;
+    transition: .5s;
+}
+.domain-reg-content-area .domain-reg-icon i:hover{
+        color: #288febc2;
+}
+
+
+/*domain-reg-price-table*/
+.domain-reg-price-table table {
+  margin: auto;
+  border-collapse: collapse;
+  overflow-x: auto;
+  width: 100%;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, .1);
+}
+
+.domain-reg-price-table td, th {
+  border: solid rgb(200, 200, 200) 1px;
+  padding: .5rem;
+}
+
+.domain-reg-price-table th {
+    text-align: center;
+    background-color: rgb(40, 143, 235);
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: rgb(31, 43, 57) solid 2px;
+    border-top: none;
+    color: #ffffffe6;
+}
+
+.domain-reg-price-table td {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    white-space: nowrap;
+    border-bottom: none;
+    color: rgb(20, 20, 20);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.domain-reg-price-table td:first-of-type, .domain-reg-price-table th:first-of-type {
+  border-left: none;
+}
+
+.domain-reg-price-table td:last-of-type, .domain-reg-price-table th:last-of-type {
+  border-right: none;
+}
+
+@media (max-width: 768px) {
+    .domain-reg-price-table table {
+      display: block;
+      width: fit-content;
+    }
+}
+
+
+/*=================================================> 
+*             Web Hosting page 
+            SharedHostingPlans-area
+            SharedHostingFeatures-area
+<================================================== */
+
+.SharedHostingPlans-area .host-item .nav-pills{
+    width: 23%;
+    margin: 0 auto;
+} 
+.SharedHostingPlans-area .host-item .nav-pills .nav-item{
+    background: #007bff57;
+    margin: 1px;
+    border-radius: 3px;
+    color: #fff;
+} 
+.SharedHostingPlans-area .host-item .nav-pills .nav-item .nav-link{
+    color: #fff !important;
+} 
+.hosting-server-stellar{
+    position: relative;
+    background-color: #f2f2f2;
+    border: 2px solid #f2f2f2;
+    border-radius: 16px;
+    padding: 40px 24px 24px;
+    margin: 0 auto 28px;
+}
+
+.hosting-server-stellar .hssinfo-payment{
+    font-size: 40px;
+    font-weight: 500;
+    margin: 40px;
+}
+.hosting-server-stellar button{
+    width: 100%;
+    padding: 8px;
+    font-size: 21px;
+    font-weight: 400;
+}
+.hosting-server-stellar button:hover{
+    background: #288feb !important;
+    border: #288feb;
+}
+.hosting-server-stellar .btn-secondary:not(:disabled):not(.disabled):active{
+    border: #288feb !important;
+    background-color: #288feb !important;
+}
+.hosting-server-stellar .btn-secondary:focus {
+    box-shadow: 0 0 0 .2rem rgba(40, 143, 235, 0.3);
+}
+.Renews-area{
+    color: #9b9b9b;
+    font-size: .75rem;
+    margin: 20px auto;
+}
+.hosting-server-stellar .hs-list-checkmark{
+    height: 145px;
+    margin: 0 -24px;
+    border-top: 2px solid #fff;
+    padding-top: 20px;
+}
+.hosting-server-stellar .custom-hs-list-checkmark{
+    height: 160px;
+}
+.hosting-server-stellar .hs-list-checkmark li{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 0 8px 0 32px;
+    float: initial;
+    color: #6d6e70;
+}
+.hosting-server-stellar .hs-list-checkmark li>i{
+    margin-right: 10px;
+    color: #288feb !important;
+}
+.hosting-server-stellar .hs-list-checkmark li .fa-info-circle{
+    color: #6d6e7047  !important; 
+}
+.hosting-server-stellar .hs-list-checkmark li a{
+    text-decoration: underline;
+    color: #6d6e70 !important;
+}
+.hosting-server-stellar .hs-list-checkmark li a:hover{
+    color: #288feb !important;
+}
+
+.hosting-server-stellar .hssinfo-payment-years{
+    margin-bottom: 20px;
+}
+.discount span{
+    color: red;
+}
+
+/*=====================================================>  
+                Accounting Software page
+<===================================================== */
+
+.as-content-info-text ul{
+    padding: 0;
+    margin-left: 30px;
+}
+.as-content-info-text ul li{
+    float: inherit;
+    list-style: disclosure-closed;
+    line-height: 30px;
+    font-size: 16px;
+    color: #686464;
+    font-style: normal;
+    font-weight: 400;
+}
+.Accounting-Software-bottom-heading h2::after{
+    width: 580px;
+    top: 45px;
+}
+.Accounting-Software-bottom-heading::before{
+    top: 45px;
+}
+@media (max-width: 414px) {
+    .customas h1{
+        font-size: 30px;
+    }
+    .Accounting-Software-img-area img{
+        width: 100%;
+        height: 200px;
+    }
+    .Accounting-Software-bottom-heading h2{
+        font-size: 18px;
+    }
+    .Accounting-Software-bottom-heading h2::after{
+        width: 300px;
+    }
+}
+
+/*=====================================================>  
+        Hostel-Management-Software page
+<===================================================== */
+
+
+.Hostel-Management-System-heading h2::after{
+    width: 446px;
+    top: 45px;
+}
+.Hostel-Management-System-heading h2::before{
+    top: 45px;
+}
+
+@media (max-width: 414px) {
+    .customhms h1{
+        font-size: 30px;
+    }
+    .Hostel-Management-System-img-area img{
+        width: 100%;
+        height: 200px;
+    }
+    .Hostel-Management-System-heading h2{
+        font-size: 20px;
+    }
+    .Hostel-Management-System-heading h2::after{
+        width: 300px;
+    }
+}
+
+
+/*=====================================================>  
+        Event-Management-Software page
+<===================================================== */
+
+.Event-Management-Software-heading h2::after{
+    width: 646px;
+    top: 45px;
+}
+.Event-Management-Software-heading h2::before{
+    top: 45px;
+}
+
+@media (max-width: 414px) {
+    .customems h1{
+        font-size: 30px;
+    }
+    .Event-Management-Software-img-area img{
+        width: 100%;
+        height: 200px;
+    }
+    .Event-Management-Software-heading h2{
+        font-size: 18px;
+    }
+    .Event-Management-Software-heading h2::after{
+        width: 320px;
+    }
+}
+
+/*================================>  
+    e-commerce-website page 
+<================================== */
+
+.E-commerce-Website-content-info-item{
+    display: flex;
+    justify-content: space-between;
+}
+.E-commerce-Website-content-info-item li{
+    padding: 5px 0;
+    font-size: 16px;
+    color: #686464;
+}
+
+.ew-content-info-text ul{
+    padding: 0;
+    margin-left: 30px;
+}
+.ew-content-info-text ul li{
+    float: inherit;
+    list-style: disclosure-closed;
+    line-height: 30px;
+    font-size: 16px;
+    color: #686464;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@media (max-width: 414px) {
+    .E-commerce-Website-content-info-item{
+        display: block;
+        justify-content: space-between;
+    }
+    .E-commerce-Website-img-area img{
+        height: 200px;
+    }
+}
+
+/*================================>  
+    e-commerce-website page 
+<================================== */
+
+.Newspaper-Website-content-info-item{
+    display: flex;
+    justify-content: space-between;
+}
+.Newspaper-Website-content-info-item li{
+    padding: 5px 0;
+    font-size: 16px;
+    color: #686464;
+}
+
+.Newspaper-Website-bottom-heading h2::after{
+    width: 180px;
+}
+@media (max-width: 414px) {
+    .Newspaper-Website-img-area img{
+        height: 200px;
+    }
+}
+
+/*================================>  
+        Graphic Design page 
+<================================== */
+
+@media (max-width: 414px) {
+    .Graphic-Design-img-area img{
+        height: 200px;
+    }
+}
+
+/*==================================>  
+        service page 
+<================================== */
+.service-banner-heading h1::after{
+    width: 360px;
+    top: 60px;
+}
+ .service-banner-heading h1::before{
+    top: 60px;;
+}
+.Graphic-Design-bottom-content-area{
+        padding: 60px 0;
+}
+.sv-icon-area-info i {
+    font-size: 19px;
+    background: #288feb;
+    color: #fff;
+    border-radius: 100%;
+    width: 55px;
+    height: 55px;
+    line-height: 51px;
+    text-align: center;
+    display: block;
+}
+
+.sv-content-info:hover .sv-icon-area-info i{
+    background: #686464;
+    border: 3px solid #288feb;
+}
+
+
+/*==================================>  
+        Login page 
+<================================== */
+
+.login-wrapper .card-header h2{
+    color: #288feb;
+}
+.logintbnsub{
+    background-color: #288feb;
+    border-color: #288feb;
+}
+
+.logintbnsub:hover {
+    background-color: #288febc4;
+    border-color: #288febc4;
+}
+.logintbnsub:not(:disabled):not(.disabled):active{
+    background-color: #288febc4;
+    border-color: #288febc4;
+}
+.logintbnsub:not(:disabled):not(.disabled):active:focus{
+    box-shadow: 0 0 0 .2rem #288febc4;
+}
+.logintbnsub:focus {
+    box-shadow: 0 0 0 .2rem #288febc4;
+}
+.logo-for-area a:hover, .logo-reg a:hover{
+    color: #288feb;
+}
